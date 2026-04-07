@@ -1,0 +1,85 @@
+# presets.py
+# Хранилище пресетов камер с цветовыми матрицами для DNG
+# ColorMatrix значения приблизительные, основаны на открытых данных DNG SDK
+
+CAMERA_PRESETS = {
+    "Canon": {
+        "Make": "Canon",
+        "Model": "Canon EOS R5",
+        "LensMake": "Canon",
+        "LensModel": "RF 24-70mm F2.8 L IS USM",
+        "Software": "Digital Photo Professional",
+        "Artist": "VM",
+        # Цветовые матрицы для DNG (3x3 для D65 и Illuminant A)
+        "ColorMatrix1": [1.7960, -0.6480, -0.1480, -0.5230, 1.4260, 0.0970, -0.1120, 0.0390, 0.6730],
+        "ColorMatrix2": [1.5890, -0.4080, -0.1810, -0.5670, 1.4820, 0.0850, -0.1450, 0.0520, 0.6080],
+        "CalibrationIlluminant1": 21,  # D65
+        "CalibrationIlluminant2": 17,  # Illuminant A
+        "AsShotNeutral": [0.5020, 1.0000, 0.7380],  # WB коэффициенты R/G/B
+    },
+    "Sony": {
+        "Make": "SONY",
+        "Model": "ILCE-7M4",
+        "LensMake": "Sony",
+        "LensModel": "FE 24-70mm F2.8 GM",
+        "Software": "Imaging Edge",
+        "Artist": "VM",
+        "ColorMatrix1": [1.5230, -0.4530, -0.0700, -0.6280, 1.5290, 0.0990, -0.1050, 0.0230, 0.6820],
+        "ColorMatrix2": [1.3560, -0.2890, -0.0670, -0.6720, 1.5870, 0.0850, -0.1340, 0.0410, 0.5930],
+        "CalibrationIlluminant1": 21,
+        "CalibrationIlluminant2": 17,
+        "AsShotNeutral": [0.5180, 1.0000, 0.7120],
+    },
+    "Nikon": {
+        "Make": "NIKON CORPORATION",
+        "Model": "NIKON Z9",
+        "LensMake": "Nikon",
+        "LensModel": "NIKKOR Z 24-70mm f/2.8 S",
+        "Software": "NX Studio",
+        "Artist": "VM",
+        "ColorMatrix1": [1.6890, -0.5670, -0.1220, -0.5890, 1.4980, 0.0910, -0.0980, 0.0310, 0.6670],
+        "ColorMatrix2": [1.4780, -0.3560, -0.1220, -0.6340, 1.5560, 0.0780, -0.1280, 0.0450, 0.5830],
+        "CalibrationIlluminant1": 21,
+        "CalibrationIlluminant2": 17,
+        "AsShotNeutral": [0.4950, 1.0000, 0.7560],
+    },
+    "Fujifilm": {
+        "Make": "FUJIFILM",
+        "Model": "X-T5",
+        "LensMake": "FUJIFILM",
+        "LensModel": "XF 23mm F1.4 R LM WR",
+        "Software": "FUJIFILM X RAW STUDIO",
+        "Artist": "VM",
+        "ColorMatrix1": [1.4560, -0.3890, -0.0670, -0.7120, 1.6230, 0.0890, -0.0890, 0.0180, 0.6490],
+        "ColorMatrix2": [1.2890, -0.2340, -0.0550, -0.7560, 1.6780, 0.0780, -0.1120, 0.0340, 0.5780],
+        "CalibrationIlluminant1": 21,
+        "CalibrationIlluminant2": 17,
+        "AsShotNeutral": [0.5340, 1.0000, 0.6890],
+    },
+    "Leica": {
+        "Make": "Leica Camera AG",
+        "Model": "LEICA M11",
+        "LensMake": "Leica",
+        "LensModel": "SUMMICRON-M 35mm f/2 ASPH",
+        "Software": "Leica FOTOS",
+        "Artist": "VM",
+        "ColorMatrix1": [1.6120, -0.4780, -0.1340, -0.5560, 1.4670, 0.0890, -0.1020, 0.0280, 0.6750],
+        "ColorMatrix2": [1.4230, -0.3120, -0.1110, -0.6010, 1.5230, 0.0780, -0.1340, 0.0420, 0.5910],
+        "CalibrationIlluminant1": 21,
+        "CalibrationIlluminant2": 17,
+        "AsShotNeutral": [0.4890, 1.0000, 0.7670],
+    },
+    "iPhone": {
+        "Make": "Apple",
+        "Model": "iPhone 15 Pro",
+        "LensMake": "Apple",
+        "LensModel": "iPhone 15 Pro back triple camera 6.86mm f/1.78",
+        "Software": "17.0.0",
+        "Artist": "VM",
+        "ColorMatrix1": [1.3890, -0.3120, -0.0770, -0.6890, 1.5890, 0.1000, -0.0780, 0.0150, 0.6630],
+        "ColorMatrix2": [1.2340, -0.1890, -0.0450, -0.7230, 1.6340, 0.0890, -0.0980, 0.0280, 0.5750],
+        "CalibrationIlluminant1": 21,
+        "CalibrationIlluminant2": 17,
+        "AsShotNeutral": [0.5560, 1.0000, 0.6780],
+    },
+}

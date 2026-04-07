@@ -1,0 +1,6 @@
+pillow
+numpy
+piexif
+pillow-heif
+rawpy
+tifffile
