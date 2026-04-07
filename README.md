@@ -249,6 +249,16 @@ Load Image -> PhotoAddGrain (0.08, size=3) -> PhotoAddExif -> PhotoSaveJpg
 
 ---
 
+## Installation
+
+1. cd ComfyUI/custom_nodes
+2. git clone https://github.com/thezveroboy/ComfyUI-zveroboy-photo
+3. cd ComfyUI-zveroboy-photo
+4. pip install -r requirements.txt
+5. Restart ComfyUI.
+
+---
+
 
 
 
@@ -504,4 +514,11 @@ Load Image → PhotoAddGrain (0.08, size=3) → PhotoAddExif → PhotoSaveJpg
 
 ---
 
+## Установка
+
+1. cd ComfyUI/custom_nodes
+2. git clone https://github.com/thezveroboy/ComfyUI-zveroboy-photo
+3. cd ComfyUI-zveroboy-photo
+4. pip install -r requirements.txt
+5. Перезапустить ComfyUI.
 
